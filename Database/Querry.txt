@@ -1,0 +1,140 @@
+///////////////////////////////////////////////////////////////////// LOGIN TABLE
+
+CREATE DATABASE projectPolice;
+
+USE projectPolice;
+
+CREATE TABLE loginTable(
+    userName VARCHAR(20),
+    password VARCHAR(20)
+);
+
+INSERT INTO loginTable VALUES ('admin' , 'password');
+
+///////////////////////////////////////////////////////////////////// TRAFFIC
+
+CREATE TABLE vehicle(
+    vehiNo VARCHAR(10) PRIMARY KEY,
+    vehiType VARCHAR(20),
+    vehiColour VARCHAR(15),
+    chassiNo VARCHAR(20),
+    engineNo VARCHAR(20),
+    vehiPhoto MEDIUMBLOB,
+    owner VARCHAR(50),
+    veciLicenceNo VARCHAR(20)
+);
+
+CREATE TABLE driver(
+    photo MEDIUMBLOB,
+    id VARCHAR(12) PRIMARY KEY,
+    name VARCHAR(50),
+    address VARCHAR(50),
+    birthDay DATE,
+    birthPlace VARCHAR(20),
+    licenceNo VARCHAR(20)
+);
+
+CREATE TABLE driverContactDetails(
+    id VARCHAR(12),
+    mobile VARCHAR(12),
+    PRIMARY KEY(id , mobile),
+    CONSTRAINT FOREIGN KEY(id) REFERENCES driver(id)  ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE dri_vehi(
+    vehiNo VARCHAR(10),
+    caseNo INT PRIMARY KEY AUTO_INCREMENT,
+    id VARCHAR(12),
+    CONSTRAINT FOREIGN KEY(vehiNo) REFERENCES vehicle(vehiNo) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT FOREIGN KEY(id) REFERENCES driver(id)  ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+////////////////////////////////////////////////////////////////////// CRIMINAL
+
+CREATE TABLE criminal(
+    photo MEDIUMBLOB,
+    fullName VARCHAR(50),
+    nic VARCHAR(12) PRIMARY KEY,
+    GENDER VARCHAR(10),
+    birthDay Date,
+    address VARCHAR(50),
+    birthPlace VARCHAR(20)
+);
+
+CREATE TABLE criminalContactDetail(
+    nic VARCHAR(20),
+    mobile VARCHAR(20),
+    CONSTRAINT FOREIGN KEY(nic) REFERENCES criminal(nic)  ON DELETE CASCADE ON UPDATE CASCADE,
+    PRIMARY KEY (nic , mobile)
+);
+
+CREATE TABLE womenAndChild(
+    caseId VARCHAR(5) PRIMARY KEY,
+    womenOrChild VARCHAR(5),
+    caseType VARCHAR(50),
+    description TEXT,
+    date DATE,
+    location VARCHAR(30),
+    sOrC VARCHAR(20)
+);
+
+CREATE TABLE crime(
+    caseId VARCHAR(5) PRIMARY KEY,
+    caseType VARCHAR(50),
+    description TEXT,
+    date DATE,
+    location VARCHAR(30)
+);
+
+CREATE TABLE mo(
+    caseId VARCHAR(5) PRIMARY KEY,
+    caseType VARCHAR(50),
+    description TEXT,
+    date DATE,
+    location VARCHAR(30)
+);
+
+CREATE TABLE drugs(
+    caseId VARCHAR(5) PRIMARY KEY,
+    caseType VARCHAR(50),
+    description TEXT,
+    date DATE,
+    location VARCHAR(30),
+    drugsType VARCHAR(30),
+    drugsAmount VARCHAR(20),
+    getFromWhom VARCHAR(20),
+    toWhom VARCHAR(20),
+    sOrC VARCHAR(20)
+);
+
+CREATE TABLE criminal_wom(
+    nic VARCHAR(20),
+    caseId VARCHAR(5),
+    CONSTRAINT FOREIGN KEY(nic) REFERENCES criminal(nic),
+    CONSTRAINT FOREIGN KEY(caseId) REFERENCES womenAndChild(caseId)  ON DELETE CASCADE ON UPDATE CASCADE,
+    PRIMARY KEY (nic , caseID)
+);
+
+CREATE TABLE criminal_crim(
+    nic VARCHAR(20),
+    caseId VARCHAR(5),
+    CONSTRAINT FOREIGN KEY(nic) REFERENCES criminal(nic)  ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT FOREIGN KEY(caseId) REFERENCES crime(caseId)  ON DELETE CASCADE ON UPDATE CASCADE,
+    PRIMARY KEY (nic , caseID)
+);
+
+CREATE TABLE criminal_mo(
+    nic VARCHAR(20),
+    caseId VARCHAR(5),
+    CONSTRAINT FOREIGN KEY(nic) REFERENCES criminal(nic) ON DELETE CASCADE ON UPDATE CASCADE ,
+    CONSTRAINT FOREIGN KEY(caseId) REFERENCES mo(caseId)  ON DELETE CASCADE ON UPDATE CASCADE ,
+    PRIMARY KEY (nic , caseID)
+);
+
+CREATE TABLE criminal_drugs(
+    nic VARCHAR(20),
+    caseId VARCHAR(5),
+    CONSTRAINT FOREIGN KEY(nic) REFERENCES criminal(nic)  ON DELETE CASCADE ON UPDATE CASCADE ,
+    CONSTRAINT FOREIGN KEY(caseId) REFERENCES drugs(caseId) ON DELETE CASCADE ON UPDATE CASCADE ,
+    PRIMARY KEY (nic , caseID)
+);

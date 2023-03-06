@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WcDivisionUpdateFormController">
+   <children>
+      <Label layoutX="-12.0" prefHeight="652.0" prefWidth="470.0" style="-fx-background-color: #2B286D;" />
+      <Label alignment="CENTER" layoutX="458.0" layoutY="4.0" prefHeight="87.0" prefWidth="850.0" text="WOMEN AND CHILD DIVISION">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="506.0" layoutY="133.0" prefHeight="48.0" prefWidth="271.0" text="Women Or Child" />
+      <Label layoutX="506.0" layoutY="196.0" prefHeight="48.0" prefWidth="271.0" text="Case Type" />
+      <Label layoutX="506.0" layoutY="358.0" prefHeight="48.0" prefWidth="271.0" text="Location" />
+      <JFXButton fx:id="saveBtn" layoutX="1097.0" layoutY="592.0" onAction="#saveBtnOnAction" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #2B286D; -fx-background-radius: 15;" text="SAVE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="506.0" layoutY="426.0" prefHeight="48.0" prefWidth="271.0" text="Date" />
+      <Label layoutX="506.0" layoutY="503.0" prefHeight="48.0" prefWidth="271.0" text="Fatality of  the case">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <RadioButton fx:id="womenId" layoutX="716.0" layoutY="142.0" mnemonicParsing="false" text="Women">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="childId" layoutX="913.0" layoutY="142.0" mnemonicParsing="false" text="Child">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <Label layoutX="506.0" layoutY="256.0" prefHeight="48.0" prefWidth="271.0" text="Discription" />
+      <JFXTextField fx:id="descriptionId" layoutX="693.0" layoutY="256.0" prefHeight="87.0" prefWidth="470.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="dateId" layoutX="693.0" layoutY="435.0" prefHeight="31.0" prefWidth="470.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <ComboBox fx:id="sOrCId" layoutX="693.0" layoutY="512.0" prefHeight="31.0" prefWidth="477.0" promptText="Minor Case Or MajorCase">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <JFXButton fx:id="mainBtn" layoutX="113.0" layoutY="577.0" onAction="#mainBtnOnAction" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 15;" stylesheets="@../stylesheet/UpdateBtn.css" text="Main" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backBtn" layoutX="113.0" layoutY="512.0" onAction="#backBtnOnAction" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 15;" stylesheets="@../stylesheet/UpdateBtn.css" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="caseTypeId" layoutX="685.0" layoutY="205.0" prefHeight="31.0" prefWidth="477.0" promptText="Case Type">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label layoutX="506.0" layoutY="91.0" prefHeight="31.0" prefWidth="217.0" text="Case ID" />
+      <JFXTextField fx:id="caseId" layoutX="682.0" layoutY="84.0" prefHeight="45.0" prefWidth="483.0" promptText="Use 5 Letters or Numbers" />
+      <ComboBox fx:id="locationId" layoutX="693.0" layoutY="367.0" prefHeight="31.0" prefWidth="477.0" promptText="Select Location">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+   </children>
+</AnchorPane>

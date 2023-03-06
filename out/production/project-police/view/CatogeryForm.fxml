@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" stylesheets="@../stylesheet/ViewCasesAreas.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CatogeryFormController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="504.0" style="-fx-background-color: #2B286D;">
+         <children>
+            <ComboBox fx:id="typeOfCaseId" layoutX="20.0" layoutY="141.0" prefHeight="19.0" prefWidth="447.0" promptText="Types Of Cases" stylesheets="@../stylesheet/ViewCasesAreas.css" />
+            <ComboBox fx:id="areaId" layoutX="20.0" layoutY="227.0" prefHeight="19.0" prefWidth="447.0" promptText="Area" stylesheets="@../stylesheet/ViewCasesAreas.css" />
+            <Button fx:id="searchBtnId" alignment="TOP_LEFT" graphicTextGap="25.0" layoutX="130.0" layoutY="333.0" mnemonicParsing="false" onAction="#searchBtnIdOnAction" prefHeight="46.0" prefWidth="200.0" style="-fx-background-radius: 50;" text="Search">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-search-90.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="mainBtn" alignment="TOP_LEFT" graphicTextGap="35.0" layoutX="130.0" layoutY="450.0" mnemonicParsing="false" onAction="#mainBtnOnAction" prefHeight="46.0" prefWidth="200.0" style="-fx-background-radius: 50;" text="Main">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-police-badge-90.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

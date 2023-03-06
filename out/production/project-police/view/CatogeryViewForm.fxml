@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CatogeryViewFormControllers">
+   <children>
+      <Label prefHeight="658.0" prefWidth="425.0" style="-fx-background-color: #2B286D;" />
+      <Label layoutX="873.0" prefHeight="658.0" prefWidth="435.0" style="-fx-background-color: #2B286D;" />
+      <Label layoutX="423.0" prefHeight="658.0" prefWidth="456.0" style="-fx-background-color: 2B286D;" textFill="WHITE" />
+      <JFXTextField fx:id="fullNameId1" layoutX="138.0" layoutY="274.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="addressId1" layoutX="138.0" layoutY="408.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="nicId1" layoutX="138.0" layoutY="341.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="age1" layoutX="138.0" layoutY="478.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="count1" layoutX="138.0" layoutY="546.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;" />
+      <Text fx:id="fullNameLabel1" fill="WHITE" layoutX="20.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="Full Name" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="nicLabel1" fill="WHITE" layoutX="20.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="NIC" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="addressLabel1" fill="WHITE" layoutX="20.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="Address" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="birthday1" fill="WHITE" layoutX="20.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="BirthDay" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="countLabel1" fill="WHITE" layoutX="20.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="Count" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="fullNameLabel2" layoutX="452.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="Full Name" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="fullNameId2" layoutX="578.0" layoutY="273.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Text fx:id="nicLabel2" layoutX="452.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="NIC" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="nicId2" layoutX="578.0" layoutY="342.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Text fx:id="addressLabel2" layoutX="452.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="Address" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="addressId2" layoutX="578.0" layoutY="407.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Text fx:id="birthday2" layoutX="452.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="BirthDay" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="age2" layoutX="578.0" layoutY="478.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Text fx:id="countLabel2" layoutX="452.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="Count" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="count2" layoutX="578.0" layoutY="546.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Text fx:id="fullNameLabel3" fill="WHITE" layoutX="895.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="Full Name" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="fullNameId3" layoutX="1017.0" layoutY="273.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Text fx:id="nicLabel3" fill="WHITE" layoutX="903.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="NIC" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="nicId3" layoutX="1017.0" layoutY="341.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Text fx:id="addressLabel3" fill="WHITE" layoutX="895.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="Address" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="addressId3" layoutX="1017.0" layoutY="408.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;" />
+      <Text fx:id="birthday3" fill="WHITE" layoutX="895.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="BirthDay" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="age3" layoutX="1017.0" layoutY="480.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;" />
+      <Text fx:id="countLabel3" fill="WHITE" layoutX="895.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: white;" text="Count" wrappingWidth="145.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="count3" layoutX="1017.0" layoutY="546.0" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white;" />
+      <JFXButton fx:id="backBtn" layoutX="31.0" layoutY="607.0" onAction="#backBtnOnAction" prefHeight="31.0" prefWidth="69.0" style="-fx-background-color: white;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="nextBtn" layoutX="1208.0" layoutY="607.0" onAction="#nextBtnOnAction" prefHeight="31.0" prefWidth="69.0" style="-fx-background-color: white;" text="Next">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="imageView1" fitHeight="191.0" fitWidth="214.0" layoutX="106.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView2" fitHeight="191.0" fitWidth="214.0" layoutX="547.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView3" fitHeight="191.0" fitWidth="214.0" layoutX="1017.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="backBtnMain" layoutX="672.0" layoutY="607.0" mnemonicParsing="false" onAction="#backBtnMainOnAction" prefHeight="40.0" prefWidth="81.0" style="-fx-background-radius: 50; -fx-background-color: #2B286D;" text="back" textFill="#fffefe">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainBtn" layoutX="557.0" layoutY="607.0" mnemonicParsing="false" onAction="#mainBtnOnAction" prefHeight="40.0" prefWidth="81.0" style="-fx-background-radius: 50; -fx-background-color: #2B286D;" text="main" textFill="#fffefe">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

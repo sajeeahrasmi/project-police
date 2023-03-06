@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DrugsDivisionUpdateFormController">
+   <children>
+      <Label prefHeight="652.0" prefWidth="491.0" style="-fx-background-color: #2B286D;" />
+      <Label alignment="CENTER" layoutX="491.0" prefHeight="98.0" prefWidth="814.0" text="DRUGS  DETAILS">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="mainBtn" layoutX="146.0" layoutY="485.0" onAction="#mainBtnOnAction" prefHeight="31.0" prefWidth="193.0" style="-fx-background-color: WHITE;" text="MAIN">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="backBtn" layoutX="146.0" layoutY="559.0" onAction="#backBtnOnAction" prefHeight="31.0" prefWidth="193.0" style="-fx-background-color: WHITE;" text="BACK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="saveBtn" layoutX="1091.0" layoutY="599.0" onAction="#saveBtnOnAction" prefHeight="31.0" prefWidth="193.0" style="-fx-background-color: #2B286D;" text="SAVE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="530.0" layoutY="135.0" prefHeight="31.0" prefWidth="176.0" text="Case Type">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="530.0" layoutY="186.0" prefHeight="31.0" prefWidth="176.0" text="Discription">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="530.0" layoutY="310.0" prefHeight="31.0" prefWidth="176.0" text="Location">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="530.0" layoutY="257.0" prefHeight="31.0" prefWidth="176.0" text="Date">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="530.0" layoutY="356.0" prefHeight="31.0" prefWidth="176.0" text="Drugs Type">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="530.0" layoutY="403.0" prefHeight="31.0" prefWidth="176.0" text="Drugs Amount">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="530.0" layoutY="446.0" prefHeight="31.0" prefWidth="176.0" text="Got From Whoom">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="530.0" layoutY="544.0" prefHeight="31.0" prefWidth="176.0" text="Fatality Of the Case">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="530.0" layoutY="497.0" prefHeight="31.0" prefWidth="176.0" text="Got From To Whoom">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="dateId" layoutX="696.0" layoutY="257.0" prefHeight="31.0" prefWidth="554.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="drugsTypeId" layoutX="699.0" layoutY="356.0" prefHeight="31.0" prefWidth="554.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="drugsAmoutId" layoutX="699.0" layoutY="403.0" prefHeight="31.0" prefWidth="554.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="getFromWhomId" layoutX="699.0" layoutY="446.0" prefHeight="31.0" prefWidth="554.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="toWhomId" layoutX="699.0" layoutY="497.0" prefHeight="31.0" prefWidth="554.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <ComboBox fx:id="caseTypeId" layoutX="694.0" layoutY="135.0" prefHeight="31.0" prefWidth="554.0" promptText="Select Case Type">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <ComboBox fx:id="sOrCId" layoutX="696.0" layoutY="544.0" prefHeight="31.0" prefWidth="554.0" promptText="Minor Case Or MajorCase">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <ComboBox fx:id="locationId" layoutX="696.0" layoutY="310.0" prefHeight="31.0" prefWidth="554.0" promptText="Select Location">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <JFXTextArea fx:id="descriptionId" layoutX="696.0" layoutY="173.0" prefHeight="68.0" prefWidth="554.0" />
+      <Label layoutX="530.0" layoutY="90.0" prefHeight="31.0" prefWidth="217.0" text="Case ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="caseId" layoutX="694.0" layoutY="83.0" prefHeight="45.0" prefWidth="554.0" promptText="Use 5 Letters or Numbers" />
+   </children>
+</AnchorPane>

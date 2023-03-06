@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TrafficIdSearchFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="193.0" prefWidth="1300.0" style="-fx-background-color: #2B286D;" text="Traffic Department" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="searchIdTextField" labelFloat="true" layoutX="263.0" layoutY="249.0" onAction="#searchIdTextFieldOnAction" prefHeight="50.0" prefWidth="836.0" promptText="Vehical / Driver ID">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="searchBtn" layoutX="569.0" layoutY="365.0" onAction="#searchBtnOnAction" prefHeight="50.0" prefWidth="224.0" style="-fx-background-color: #2B286D;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="mainMenuBtn" layoutX="569.0" layoutY="460.0" onAction="#mainMenuBtnOnAction" prefHeight="50.0" prefWidth="224.0" style="-fx-background-color: #2B286D;" text="Main" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="80.0" fitWidth="46.0" layoutX="575.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-search-90.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="569.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-police-badge-90.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="46.0" layoutX="1053.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-search-90.png" />
+         </image>
+      </ImageView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="TEXT" />
+   </cursor>
+</AnchorPane>

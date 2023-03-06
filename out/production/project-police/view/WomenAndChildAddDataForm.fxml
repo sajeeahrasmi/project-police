@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WomenAndChildAddDataFormController">
+   <children>
+      <ButtonBar layoutX="81.0" layoutY="200.0" prefHeight="40.0" prefWidth="200.0" />
+      <Pane prefHeight="650.0" prefWidth="326.0" style="-fx-background-color: #2B286D;">
+         <children>
+            <Button fx:id="mainBtn" layoutX="80.0" layoutY="569.0" mnemonicParsing="false" onAction="#mainBtnOnAction" prefHeight="50.0" prefWidth="166.0" style="-fx-background-radius: 100; -fx-background-color: White;" text="Main">
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="backBtn" layoutX="80.0" layoutY="492.0" mnemonicParsing="false" onAction="#backBtnOnAction" prefHeight="50.0" prefWidth="166.0" style="-fx-background-radius: 100; -fx-background-color: White;" text="Back">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="80.0" layoutY="25.0" prefHeight="29.0" prefWidth="166.0" text="Women And Child" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageViewId" fitHeight="161.0" fitWidth="200.0" layoutX="63.0" layoutY="74.0" onMouseClicked="#imageViewOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/187803-200.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="326.0" prefHeight="650.0" prefWidth="975.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label layoutX="25.0" layoutY="23.0" text="First Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="63.0" text="Last Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="103.0" text="Nic">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="143.0" text="Gender">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="183.0" text="Date of Birth">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="223.0" text="Address">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="283.0" text="BirthPlace">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="323.0" text="Women or Child">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="403.0" text="Case Type">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="minorCase" layoutX="300.0" layoutY="583.0" mnemonicParsing="false" text="Minor Case">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></RadioButton>
+            <Label layoutX="25.0" layoutY="443.0" text="Description">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="543.0" text="Date">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="503.0" text="Location">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="593.0" text="Fatality of the case">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="majorCase" layoutX="300.0" layoutY="613.0" mnemonicParsing="false" text="Major Case">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <Button fx:id="saveBtn" layoutX="770.0" layoutY="583.0" mnemonicParsing="false" onAction="#saveBtnOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #2B286D; -fx-background-radius: 100;" text="Save" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="firstName" layoutX="250.0" layoutY="21.0" prefHeight="25.0" prefWidth="550.0" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="nic" layoutX="248.0" layoutY="101.0" prefHeight="25.0" prefWidth="550.0" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="dateOfBirth" layoutX="250.0" layoutY="181.0" prefHeight="25.0" prefWidth="550.0" promptText="YYYY-MM-DD" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="birthPlace" layoutX="250.0" layoutY="281.0" prefHeight="25.0" prefWidth="550.0" promptText="YYYY-MM-DD" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="lastName" layoutX="248.0" layoutY="61.0" prefHeight="25.0" prefWidth="550.0" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="date" layoutX="250.0" layoutY="541.0" prefHeight="25.0" prefWidth="550.0" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextArea fx:id="description" layoutX="250.0" layoutY="441.0" prefHeight="25.0" prefWidth="550.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextArea>
+            <RadioButton fx:id="male" layoutX="250.0" layoutY="141.0" mnemonicParsing="false" text="MALE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="female" layoutX="350.0" layoutY="141.0" mnemonicParsing="false" text="FEMALE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="child" layoutX="261.0" layoutY="321.0" mnemonicParsing="false" text="CHILD">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="women" layoutX="350.0" layoutY="321.0" mnemonicParsing="false" text="WOMAN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <TextArea fx:id="address" layoutX="250.0" layoutY="221.0" prefHeight="25.0" prefWidth="550.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextArea>
+            <Label layoutX="25.0" layoutY="363.0" text="Case Id">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="caseId" layoutX="250.0" layoutY="361.0" prefHeight="25.0" prefWidth="550.0" style="-fx-background-radius: 50;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <ComboBox fx:id="caseTypeId" layoutX="250.0" layoutY="400.0" prefHeight="31.0" prefWidth="550.0" style="-fx-background-radius: 50;" />
+            <ComboBox fx:id="locationId" layoutX="250.0" layoutY="500.0" prefHeight="31.0" prefWidth="550.0" style="-fx-background-radius: 50;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.A">
+   <children>
+      <Label prefHeight="652.0" prefWidth="473.0" style="-fx-background-color: #2B286D;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="116.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@17973908.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="480.0" layoutY="14.0" prefHeight="65.0" prefWidth="813.0" text="CRIMINAL  DETAILS">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" layoutY="119.0" prefHeight="33.0" prefWidth="210.0" text="Frist Name" />
+      <Label layoutX="504.0" layoutY="185.0" prefHeight="33.0" prefWidth="210.0" text="Last Name" />
+      <Label layoutX="504.0" layoutY="244.0" prefHeight="33.0" prefWidth="210.0" text="NIC" />
+      <Label layoutX="504.0" layoutY="302.0" prefHeight="33.0" prefWidth="210.0" text="Gender" />
+      <Label layoutX="504.0" layoutY="363.0" prefHeight="33.0" prefWidth="210.0" text="Date Of Birth" />
+      <Label layoutX="504.0" layoutY="421.0" prefHeight="33.0" prefWidth="210.0" text="Address" />
+      <Label layoutX="504.0" layoutY="477.0" prefHeight="33.0" prefWidth="210.0" text="Birth Place" />
+      <JFXButton layoutX="1099.0" layoutY="592.0" onAction="#update" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #2B286D;" text="SAVE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField layoutX="691.0" layoutY="120.0" prefHeight="31.0" prefWidth="510.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField layoutX="691.0" layoutY="186.0" prefHeight="31.0" prefWidth="510.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField layoutX="691.0" layoutY="246.0" prefHeight="31.0" prefWidth="510.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField layoutX="691.0" layoutY="364.0" prefHeight="31.0" prefWidth="510.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField layoutX="691.0" layoutY="422.0" prefHeight="31.0" prefWidth="510.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField layoutX="684.0" layoutY="478.0" prefHeight="31.0" prefWidth="510.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <RadioButton layoutX="691.0" layoutY="325.0" mnemonicParsing="false" text="MALE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton layoutX="884.0" layoutY="325.0" mnemonicParsing="false" text="FEMALE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <JFXButton layoutX="135.0" layoutY="576.0" onAction="#main" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: WHITE;" text="MAIN">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="135.0" layoutY="535.0" onAction="#back" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: WHITE;" text="BACK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Slider layoutX="45.0" layoutY="317.0" prefHeight="18.0" prefWidth="399.0" />
+      <Slider layoutX="45.0" layoutY="396.0" prefHeight="18.0" prefWidth="399.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="336.0" prefHeight="21.0" prefWidth="94.0" text="LOW" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="412.0" prefHeight="21.0" prefWidth="94.0" text="LOW" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="379.0" layoutY="336.0" prefHeight="21.0" prefWidth="94.0" text="HIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="379.0" layoutY="411.0" prefHeight="21.0" prefWidth="94.0" text="HIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="157.0" layoutY="336.0" prefHeight="21.0" prefWidth="164.0" text="Minor Cases" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="157.0" layoutY="411.0" prefHeight="21.0" prefWidth="164.0" text="Major Cases" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

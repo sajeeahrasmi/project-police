@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CriminalDetailsFormController">
+    <children>
+        <Label prefHeight="652.0" prefWidth="473.0" style="-fx-background-color: #2B286D;" />
+        <Label alignment="CENTER" layoutX="480.0" layoutY="14.0" prefHeight="65.0" prefWidth="813.0" text="CRIMINAL  DETAILS">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="504.0" layoutY="154.0" prefHeight="33.0" prefWidth="210.0" text="Full Name" />
+        <Label layoutX="504.0" layoutY="214.0" prefHeight="33.0" prefWidth="210.0" text="NIC" />
+        <Label layoutX="504.0" layoutY="272.0" prefHeight="33.0" prefWidth="210.0" text="Gender" />
+        <Label layoutX="504.0" layoutY="333.0" prefHeight="33.0" prefWidth="210.0" text="Date Of Birth" />
+        <Label layoutX="504.0" layoutY="391.0" prefHeight="33.0" prefWidth="210.0" text="Address" />
+        <Label layoutX="504.0" layoutY="447.0" prefHeight="33.0" prefWidth="210.0" text="Birth Place" />
+        <JFXButton fx:id="addCaseBtn" layoutX="1076.0" layoutY="592.0" onAction="#addCaseBtnOnAction" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #2B286D;" text="ADD CASE" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton fx:id="updateBtn" layoutX="480.0" layoutY="592.0" onAction="#updateBtnOnAction" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #2B286D;" text="UPDATE" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXTextField fx:id="fullNameTextFieldId" editable="false" layoutX="691.0" layoutY="155.0" prefHeight="31.0" prefWidth="510.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </JFXTextField>
+        <JFXTextField fx:id="nicId" editable="false" layoutX="691.0" layoutY="216.0" prefHeight="31.0" prefWidth="510.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </JFXTextField>
+        <JFXTextField fx:id="dateOfBirthId" editable="false" layoutX="691.0" layoutY="334.0" prefHeight="31.0" prefWidth="510.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXTextField>
+        <JFXTextField fx:id="addressId" editable="false" layoutX="691.0" layoutY="392.0" prefHeight="31.0" prefWidth="510.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXTextField>
+        <JFXTextField fx:id="birthPlaceId" editable="false" layoutX="691.0" layoutY="448.0" prefHeight="31.0" prefWidth="510.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXTextField>
+        <JFXButton fx:id="mainBtn" layoutX="135.0" layoutY="576.0" onAction="#mainBtnOnAction" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: WHITE;" text="MAIN">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton fx:id="backBtn" layoutX="135.0" layoutY="535.0" onAction="#backBtnOnAction" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: WHITE;" text="BACK">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <Slider fx:id="minorCaseSlider" blockIncrement="0.0" layoutX="45.0" layoutY="317.0" prefHeight="18.0" prefWidth="399.0" />
+        <Slider fx:id="majorCaseSlider" blockIncrement="0.0" layoutX="45.0" layoutY="396.0" prefHeight="18.0" prefWidth="399.0" />
+        <Label alignment="CENTER" layoutX="14.0" layoutY="336.0" prefHeight="21.0" prefWidth="94.0" text="LOW" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="14.0" layoutY="412.0" prefHeight="21.0" prefWidth="94.0" text="LOW" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="379.0" layoutY="336.0" prefHeight="21.0" prefWidth="94.0" text="HIGHT" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="379.0" layoutY="411.0" prefHeight="21.0" prefWidth="94.0" text="HIGHT" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="157.0" layoutY="336.0" prefHeight="21.0" prefWidth="164.0" text="Minor Cases" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="157.0" layoutY="411.0" prefHeight="21.0" prefWidth="164.0" text="Major Cases" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="getPdfBtn" layoutX="480.0" layoutY="551.0" onAction="#getPdfBtnOnAction" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #2B286D;" text="GET PDF " textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <ComboBox fx:id="selectDepartMentComboBox" accessibleRole="CONTEXT_MENU" layoutX="1076.0" layoutY="551.0" onAction="#selectDepartMentComboBoxOnAction" prefHeight="31.0" prefWidth="200.0" promptText="SELECT DEPARTMENT">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></ComboBox>
+        <ImageView fx:id="photoId" fitHeight="220.0" fitWidth="243.0" layoutX="107.0" layoutY="57.0" onMouseClicked="#photoIdOnMouseClicked" pickOnBounds="true" preserveRatio="true" />
+        <JFXTextField fx:id="genderId" editable="false" layoutX="691.0" layoutY="273.0" prefHeight="31.0" prefWidth="510.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </JFXTextField>
+    </children>
+
+
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" style="-fx-background-color: #2B286D;" stylesheets="@../stylesheet/CriminalWindow.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CriminalIdSearchFormController">
+   <children>
+      <AnchorPane layoutX="319.0" layoutY="-2.0" prefHeight="657.0" prefWidth="621.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="btnSearch" layoutX="183.0" layoutY="251.0" mnemonicParsing="false" onAction="#btnSeachOnAction" prefHeight="43.0" prefWidth="242.0" text="Search" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMain" layoutX="183.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnMainOnAction" prefHeight="51.0" prefWidth="242.0" style="-fx-background-radius: 50;" text="Main" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <TextField fx:id="idOrNameTextField" alignment="CENTER" layoutX="94.0" layoutY="100.0" onAction="#idOrNameTextField" prefHeight="51.0" prefWidth="459.0" promptText="ID/NAME" style="-fx-background-color: #2B286D; -fx-background-radius: 50;" stylesheets="@../stylesheet/StyleSearchId.css">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="213.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-search-90.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="208.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-police-badge-90.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

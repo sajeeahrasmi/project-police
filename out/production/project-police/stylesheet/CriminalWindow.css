@@ -1,0 +1,17 @@
+#txtName{
+    -fx-text-fill: white;
+}
+#btnSearch:hover,#btnMain:hover{
+    -fx-background-color: #8e8ae2;
+}
+#btnSearch:pressed,#btnMain:pressed{
+    -fx-background-color: #030355;
+}
+#btnSearch{
+    -fx-background-color:  #2B286D;
+    -fx-background-radius: 50;
+}
+#btnMain{
+    -fx-background-color:  #2B286D;
+    -fx-background-radius: 50;
+}

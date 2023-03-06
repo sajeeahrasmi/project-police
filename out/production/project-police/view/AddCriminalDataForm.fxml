@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="639.0" prefWidth="1300.0" stylesheets="@../stylesheet/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCriminalDataFormController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="975.0" layoutX="325.0" pickOnBounds="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dad7d7" height="650.0" layoutX="-3.0" stroke="#448bee" strokeType="INSIDE" strokeWidth="3.0" width="327.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b0a61" height="650.0" layoutX="684.0" stroke="BLACK" strokeType="INSIDE" width="154.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b0a61" height="650.0" layoutX="1133.0" stroke="BLACK" strokeType="INSIDE" width="167.0" />
+      <JFXButton fx:id="btnAdd" alignment="TOP_LEFT" graphicTextGap="20.0" layoutX="51.0" layoutY="325.0" onAction="#btnAddOnAction" prefHeight="24.0" prefWidth="167.0" text="  ADD ">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-add-90.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMain" alignment="TOP_LEFT" graphicTextGap="25.0" layoutX="52.0" layoutY="396.0" onAction="#btnMainOnAction" prefHeight="45.0" prefWidth="167.0" text="MAIN" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-police-badge-90.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="departmentComboBox" layoutX="36.0" layoutY="182.0" prefHeight="31.0" prefWidth="213.0" promptText="   Select Department" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+#btnMain:hover{
+    -fx-background-color: #8e8ae2;
+}
+#btnMain:pressed{
+    -fx-background-color: #030355;
+}
+
+#btnMain{
+    -fx-background-color:  #2B286D;
+    -fx-background-radius: 50;
+    -fx-text-fill: white;
+}

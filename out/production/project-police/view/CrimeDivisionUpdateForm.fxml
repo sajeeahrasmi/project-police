@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CrimeDivisionUpdateFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="437.0" prefHeight="97.0" prefWidth="863.0" text="CRIME DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label prefHeight="652.0" prefWidth="437.0" style="-fx-background-color: #2B286D;" />
+      <JFXButton fx:id="backBtn" layoutX="148.0" layoutY="492.0" onAction="#backBtnOnAction" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: WHITE; -fx-background-radius: 15;" text="BACK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="mainBtn" layoutX="148.0" layoutY="570.0" onAction="#mainBtnOnAction" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: WHITE; -fx-background-radius: 15;" text="MAIN">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="caseTypeComboBoxId" layoutX="666.0" layoutY="183.0" prefHeight="31.0" prefWidth="529.0" promptText="SELECT CASES">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label layoutX="481.0" layoutY="183.0" prefHeight="31.0" prefWidth="217.0" text="Case type" />
+      <Label layoutX="481.0" layoutY="269.0" prefHeight="31.0" prefWidth="217.0" text="Discription" />
+      <Label layoutX="481.0" layoutY="397.0" prefHeight="31.0" prefWidth="217.0" text="Date" />
+      <Label layoutX="481.0" layoutY="475.0" prefHeight="31.0" prefWidth="217.0" text="Location" />
+      <JFXTextField fx:id="dateTextFieldId" layoutX="666.0" layoutY="383.0" prefHeight="45.0" prefWidth="529.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <ComboBox fx:id="locationId" layoutX="666.0" layoutY="477.0" prefHeight="31.0" prefWidth="529.0" promptText="SELECT LOCATION">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <JFXButton fx:id="saveBtn" layoutX="1112.0" layoutY="570.0" onAction="#saveBtnOnAction" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: #2B286D; -fx-background-radius: 15;" text="SAVE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="descriptionTextAreaId" layoutX="666.0" layoutY="237.0" prefHeight="127.0" prefWidth="529.0" />
+      <Label layoutX="481.0" layoutY="104.0" prefHeight="31.0" prefWidth="217.0" text="Case ID" />
+      <JFXTextField fx:id="caseId" layoutX="666.0" layoutY="97.0" prefHeight="45.0" prefWidth="529.0" promptText="Use 5 Letters or Numbers" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoWindowFormController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="650.0" prefWidth="325.0" style="-fx-background-color: #2B286D;">
+         <children>
+            <Button layoutX="18.0" layoutY="575.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="280.0" style="-fx-background-radius: 50;" text="Main" translateX="5.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="23.0" layoutY="507.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="280.0" style="-fx-background-radius: 50;" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="53.0" layoutY="14.0" prefHeight="50.0" prefWidth="220.0" text="ADD CRIMINAL" textFill="#f8f6f6">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="88.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@Photo.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="380.0" layoutY="30.0" prefHeight="20.0" prefWidth="150.0" text="Frist Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="70.0" prefHeight="20.0" prefWidth="150.0" text="Last Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="230.0" prefHeight="20.0" prefWidth="150.0" text="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="110.0" prefHeight="20.0" prefWidth="150.0" text="NIC">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="150.0" prefHeight="20.0" prefWidth="150.0" text="Gender">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="190.0" prefHeight="20.0" prefWidth="150.0" text="Date Of Birthday">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="270.0" prefHeight="20.0" prefWidth="150.0" text="Birth Place">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="313.0" prefHeight="20.0" prefWidth="150.0" text="Case Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="350.0" prefHeight="20.0" prefWidth="150.0" text="Description">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="480.0" prefHeight="20.0" prefWidth="150.0" text="Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="520.0" prefHeight="20.0" prefWidth="150.0" text="Location">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="1008.0" layoutY="578.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="280.0" style="-fx-background-radius: 50; -fx-background-color: #2B286D;" text="Save" textFill="#fffefe">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField layoutX="548.0" layoutY="28.0" prefHeight="20.0" prefWidth="600.0" style="-fx-background-radius: 100;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField layoutX="548.0" layoutY="68.0" prefHeight="20.0" prefWidth="600.0" style="-fx-background-radius: 100;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField layoutX="548.0" layoutY="108.0" prefHeight="20.0" prefWidth="600.0" style="-fx-background-radius: 100;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField layoutX="548.0" layoutY="188.0" prefHeight="20.0" prefWidth="600.0" style="-fx-background-radius: 100;" text="DD/MM/YYYY">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField layoutX="548.0" layoutY="268.0" prefHeight="20.0" prefWidth="600.0" style="-fx-background-radius: 100;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField layoutX="548.0" layoutY="480.0" prefHeight="20.0" prefWidth="600.0" style="-fx-background-radius: 100;" text="DD/MM/YYYY">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextArea layoutX="548.0" layoutY="350.0" prefHeight="120.0" prefWidth="600.0" style="-fx-background-radius: 20;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <ComboBox layoutX="548.0" layoutY="311.0" prefHeight="20.0" prefWidth="600.0" style="-fx-background-radius: 100;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ComboBox>
+      <ComboBox layoutX="548.0" layoutY="520.0" prefHeight="20.0" prefWidth="600.0" style="-fx-background-radius: 100;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ComboBox>
+      <RadioButton layoutX="555.0" layoutY="153.0" mnemonicParsing="false" text="Male">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton layoutX="686.0" layoutY="153.0" mnemonicParsing="false" text="Female">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton layoutX="840.0" layoutY="153.0" mnemonicParsing="false" text="Other">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <TextField layoutX="548.0" layoutY="228.0" prefHeight="20.0" prefWidth="600.0" style="-fx-background-radius: 100;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+   </children>
+   <rotationAxis>
+      <Point3D x="1.0" z="1.0" />
+   </rotationAxis>
+</AnchorPane>
